@@ -2,7 +2,10 @@
  * @file    wt_fbb.cpp
  * @section LICENCE
  *
- * Copyright (C) 2015-2019
+ * This file is part of the "Faster Minuter" index v0.1.0
+ * See: https://github.com/dominikkempa/faster-minuter
+ *
+ * Copyright (C) 2015-2021
  *   Juha Karkkainen <juha.karkkainen (at) cs.helsinki.fi>
  *   Dominik Kempa <dominik.kempa (at) gmail.com>
  *
@@ -56,11 +59,16 @@
  *
  *  @ingroup wt
  *
- * \par Reference:
+ *  \par References:
  *     [1] Simon Gog, Juha Karkkainen, Dominik Kempa,
-           Matthias Petri, Simon J. Puglisi:
+ *         Matthias Petri, Simon J. Puglisi:
  *         Faster, Minuter.
  *         DCC 2016: 53-62
+ *     [2] Simon Gog, Juha Kärkkäinen, Dominik Kempa,
+ *         Matthias Petri, Simon J. Puglisi:
+ *         Fixed Block Compression Boosting in FM-Indexes: Theory
+ *         and Practice.
+ *         Algorithmica 81(4): 1370-1391 (2019)
  */
 template<class t_bitvector       = sdsl::hyb_vector<>,
          class t_rank            = typename t_bitvector::rank_1_type,
